@@ -60,12 +60,18 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Image.asset(
+              "assets/images/happy_cookie.jpg",
+              width: 200,
+              height: 200,
+              fit: BoxFit.cover,
+            ),
             Card(
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
                   currentCookie,
-                  style: Theme.of(context).textTheme.titleMedium
+                  style: Theme.of(context).textTheme.titleMedium,
                 ),
               ),
             ),
